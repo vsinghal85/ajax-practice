@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+	//alert("event occured")
+   //event1.preventDefault();
+    $("#comments-link").click(function(event) {
+      event.preventDefault();
+      $(".comments-section").fadeToggle();
+      $('#comment_body').focus();
+});
+});
